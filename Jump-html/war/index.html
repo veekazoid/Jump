@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Jump</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			canvas {
+				cursor: default;
+				outline: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div align="center" id="embed-dk.nick.jump.GwtDefinition"></div>
+		<script type="text/javascript" src="dk.nick.jump.GwtDefinition/dk.nick.jump.GwtDefinition.nocache.js"></script>
+	</body>
+	
+	<script>
+		function handleMouseDown(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = 'default';
+		}
+		
+		function handleMouseUp(evt) {
+		  evt.preventDefault();
+		  evt.stopPropagation();
+		  evt.target.style.cursor = '';
+		}
+		
+		document.getElementById('embed-dk.nick.jump.GwtDefinition').addEventListener('mousedown', handleMouseDown, false);
+		document.getElementById('embed-dk.nick.jump.GwtDefinition').addEventListener('mouseup', handleMouseUp, false);
+	</script>
+</html>
